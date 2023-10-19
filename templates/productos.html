@@ -1,0 +1,11 @@
+<html>
+<head><title>Producto: {{nombre}}</title></head>
+<body>
+
+<img src="{{ url_for('static', filename='images/')}}{{id}}.jpg">
+<h1>Producto: <br>
+  {{nombre}}: {{precio}}</h1>
+
+  <a href="/">volver</a>
+</body>
+</html>

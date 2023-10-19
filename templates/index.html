@@ -1,0 +1,16 @@
+<html>
+    <head><title>Tienda UniRemington</title></head>
+    <body>
+    <h1>Tienda UniRemington</h1>
+      
+      <table border="1">
+      {% for producto in productos %}
+        <tr>
+          <td><a href="/producto/{{producto.id}}">{{ producto.nombre }}</a></td>
+          <td>{{ producto.precio }} </td>
+        </tr>
+      {% endfor %}
+      </table>
+      
+    </body>
+    </html>
